@@ -21,8 +21,9 @@ jobs:
         run: uv run ruff check .
       - name: Qualite
         run: |
-          uv run pytest --cov=formation_mlops_2/ tests/test_unit/ -vv -p no:warnings
-          ./tests/tests_pyramid.sh
+           uv run pytest --cov=formation_mlops_2/ tests/test_unit/ -vv -p no:warnings
+           chmod +x tests/tests_pyramid.sh
+           ./tests/tests_pyramid.sh
       - name: Run tests
         run: uv run pytest tests/test_unit
       - name: Run functional tests
