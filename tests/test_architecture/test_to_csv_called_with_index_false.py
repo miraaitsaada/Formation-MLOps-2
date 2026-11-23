@@ -15,4 +15,4 @@ PACKAGE_ROOT = Path(__file__).parents[2] / "formation_mlops_2"
 
 def test_to_csv_called_with_index_false():
     # Given
-    assert True # noqa: B011
+    assert True
