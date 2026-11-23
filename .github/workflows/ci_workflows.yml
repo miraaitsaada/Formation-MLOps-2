@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked --all-groups
       - name: Run Linter
-        run: echo "::error::À compléter - remplacez cette ligne par la commande qui lance ruff" && exit 1
+        run: ruff check .
       - name: Run tests
-        run: echo "::error::À compléter - remplacez cette ligne par la commande qui lance les tests unitaires" && exit 1
+        run: make tests-unitaires
 
